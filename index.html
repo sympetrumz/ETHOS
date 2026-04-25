@@ -38,23 +38,6 @@
     z-index: 0;
   }
 
-  /* ── Scanline sweep ── */
-  @keyframes scanline {
-    0%   { top: -4px; opacity: 0; }
-    10%  { opacity: 1; }
-    90%  { opacity: 1; }
-    100% { top: 100%; opacity: 0; }
-  }
-  .scanline {
-    position: absolute;
-    left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(0,212,255,0.6), transparent);
-    animation: scanline 5s linear infinite;
-    z-index: 10;
-    pointer-events: none;
-  }
-
   /* ── Top accent bar ── */
   .top-bar {
     position: relative;
@@ -62,7 +45,7 @@
     height: 3px;
     background: linear-gradient(90deg, #7B2FFF, #00D4FF, #7B2FFF);
     background-size: 200% 100%;
-    animation: barSlide 3s linear infinite;
+    animation: barSlide 4s linear infinite;
   }
   @keyframes barSlide {
     0%   { background-position: 0% 50%; }
@@ -108,7 +91,7 @@
     letter-spacing: 0.3em;
     color: #00D4FF;
     background: rgba(0,212,255,0.06);
-    animation: badgePulse 2.4s ease-in-out infinite;
+    animation: badgePulse 2s ease-in-out infinite;
     margin-bottom: 24px;
   }
 
@@ -145,7 +128,7 @@
     letter-spacing: 0.12em;
     color: #00D4FF;
     line-height: 1;
-    animation: titleGlow 3s ease-in-out infinite;
+    animation: titleGlow 4s ease-in-out infinite;
     margin-bottom: 6px;
   }
 
@@ -210,7 +193,7 @@
     background: radial-gradient(ellipse, rgba(0,212,255,0.25) 0%, transparent 70%);
     border-radius: 50%;
     filter: blur(12px);
-    animation: ringPulse 2.5s ease-in-out infinite;
+    animation: ringPulse 2s ease-in-out infinite;
   }
   @keyframes ringPulse {
     0%, 100% { opacity: 0.5; transform: translateX(-50%) scaleX(1); }
@@ -405,7 +388,7 @@
     border-radius: 3px;
     background: linear-gradient(135deg, #00D4FF, #7B2FFF, #00D4FF);
     background-size: 200% 200%;
-    animation: btnGradShift 3s ease infinite;
+    animation: btnGradShift 4s ease infinite;
   }
   @keyframes btnGradShift {
     0%   { background-position: 0% 50%; }
